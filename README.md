@@ -7,7 +7,7 @@ information. I offer this repository to share information gathered at SREcon.
 # Table of Contents
 
   * [Presentations](#presentations)
-    * [What Breaks Our Systems: A Taxonomy of Black Swans(#what-breaks-our-systems-a-taxonomy-of-black-swans)
+    * [What Breaks Our Systems: A Taxonomy of Black Swans](#what-breaks-our-systems-a-taxonomy-of-black-swans)
     * [Complexity: The Crucial Ingredient in Your Kitchen](#complexity-the-crucial-ingredient-in-your-kitchen)
 
 # Presentations
