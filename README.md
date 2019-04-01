@@ -6,12 +6,17 @@ information. I offer this repository to share information gathered at SREcon.
 
 # Table of Contents
 
+  * [Opening](#opening)
   * [Presentations](#presentations)
     * [What Breaks Our Systems: A Taxonomy of Black Swans](#what-breaks-our-systems-a-taxonomy-of-black-swans)
     * [Complexity: The Crucial Ingredient in Your Kitchen](#complexity-the-crucial-ingredient-in-your-kitchen)
     * [Case Study: Implementing SLOs for a New Service](#case-study-implementing-slos-for-a-new-service)
     * [Fixing On-Call When Nobody Thinks It's (Too) Broken](#fixing-on-call-when-nobody-thinks-its-too-broken)
     * [Lessons Learned in Black Box Monitoring 25,000 Endpoints and Proving the SRE Team's Value](#lessons-learned-in-black-box-monitoring-25000-endpoints-and-proving-the-sre-teams-value)
+
+# Opening
+
+Code of conduct announcement provided by [Liz Fong-Jones](https://twitter.com/lizthegrey). In short, do not be a jerk.
 
 # Presentations
 
