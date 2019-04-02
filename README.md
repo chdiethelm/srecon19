@@ -8,7 +8,7 @@ information. I offer this repository to share information gathered at SREcon.
 
   * [My General Notes](#my-general-notes)
   * [Lightning Talks](#lightning-talks)
-  * [Labs]
+  * [Labs](#labs)
     * [A Guided Tour of Kubernetes Cluster Setup](#a-guided-tour-of-kubernetes-cluster-setup)
     * [Getting Started with Observability Lab](#getting-started-with-observability-lab)
   * [Presentations](#presentations)
