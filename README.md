@@ -44,28 +44,28 @@ information. I offer this repository to share information gathered at SREcon.
 
 # Lightning Talks
 
-1. Livetweeting Tech Conferences
+* Livetweeting Tech Conferences
   * [Bridget Kromhout](https://twitter.com/bridgetkromhout), Microsoft
   * [Speaking engagements](http://bridgetkromhout.com/speaking)
   * [Blog about livetweeting conferences](https://bridgetkromhout.com/blog/livetweeting-tech-conferences/)
   * Incorporate the conference hashtag in all tweets and responses.
-1. 5 Insights from 200 SREs on How Incident Response Affects Them
+* 5 Insights from 200 SREs on How Incident Response Affects Them
   * [Jaime Woo](https://twitter.com/jaimewoo), [Dawn Parzych](https://twitter.com/dparzych), Catchpoint
   * [Full report](http://bit.ly/2019SRE-Report)
-1. Distributed Systems Need Deadlines
+* Distributed Systems Need Deadlines
   * [Paul Henry](https://twitter.com/paulhenry), Coinbase
   * Cool use of [Golang gophers](https://github.com/mholt/golang-graphics)
   * [Reading list](https://bit.ly/2HykYV8)
-1. Doughnut Dilemma: A Lesson in Resource Managers
+* Doughnut Dilemma: A Lesson in Resource Managers
   * [Ravi Lachhman](https://twitter.com/ravilach), AppDynamics
-1. Automating SRE Work: Focusing on High-Return Customer and Business Outcomes
+* Automating SRE Work: Focusing on High-Return Customer and Business Outcomes
   * Aniket Kulkarni, PayPal
-1. Durable Disorder
+* Durable Disorder
   * Anthony Sandoval, GitLab Inc
-1. The Operation Maturity Model
+* The Operation Maturity Model
   * [Matthew Fornaciari](https://twitter.com/callmeforni), Gremlin, Inc.
   * Join the [Chaos Community](http://gremlin.com/slack)
-1. "Monitoring and Alerting, Ain't Nobody Got Time for That": How USDS Bootstrapped Basic SRE Best Practices a Week before Launch at FEMA
+* "Monitoring and Alerting, Ain't Nobody Got Time for That": How USDS Bootstrapped Basic SRE Best Practices a Week before Launch at FEMA
   * David Holmes, USDS
   * Said that HealthCare.Gov started with zero monitoring. Team members joked, "CNN works as our alerting system."
   * [Apply](http://usds.gov/apply)
