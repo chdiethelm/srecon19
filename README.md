@@ -7,6 +7,10 @@ information. I offer this repository to share information gathered at SREcon.
 # Table of Contents
 
   * [My General Notes](#my-general-notes)
+  * [Lightning Talks](#lightning-talks)
+  * [Labs]
+    * [A Guided Tour of Kubernetes Cluster Setup](#a-guided-tour-of-kubernetes-cluster-setup)
+    * [Getting Started with Observability Lab](#getting-started-with-observability-lab)
   * [Presentations](#presentations)
     * [What Breaks Our Systems: A Taxonomy of Black Swans](#what-breaks-our-systems-a-taxonomy-of-black-swans)
     * [Complexity: The Crucial Ingredient in Your Kitchen](#complexity-the-crucial-ingredient-in-your-kitchen)
@@ -19,8 +23,10 @@ information. I offer this repository to share information gathered at SREcon.
     * [Creating a Code Review Culture](#creating-a-code-review-culture)
     * [Tracing, Fast and Slow: Digging into and Improving Your Web Service's Performance](#tracing-fast-and-slow-digging-into-and-improving-your-web-services-performance)
     * [Visibility Into Loggers](#visibility-into-loggers)
-    * [A Guided Tour of Kubernetes Cluster Setup](#a-guided-tour-of-kubernetes-cluster-setup)
     * [What I Wish I Knew before Going On-call](#what-i-wish-i-knew-before-going-on-call)
+    * [Madaari: Ordering for the Monkeys](#madaari-ordering-for-the-monkeys)
+    * [Latency SLOs Done Right](#latency-slos-done-right)
+    * [Resilience Engineering Mythbusting](#resilience-engineering-mythbusting)
 
 # My General Notes
 
@@ -32,6 +38,74 @@ information. I offer this repository to share information gathered at SREcon.
 * I want art from [Emily Griffin](https://www.daybrighten.com/) for any future slides I need to present from.
 * I did not attend the talk, but read about [Amy Tobey](https://twitter.com/missamytobey)'s quote, "Heroes are a liability."
 * I missed [Leslie Carr](https://twitter.com/lesliegeek?lang=en)'s [presentation about loving your job](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_carr.pdf). That sounded like a good one.
+* The lightning rounds were great: quick, informative, fun.
+  * [Bridget Kromhout](https://twitter.com/bridgetkromhout) gave a quick talk about live Tweeting conferences.
+  * USDS got some laughs when they stated that in its early days, HealthCare.Gov had no monitoring, and that the team joked that CNN was good enough for alerting.
+
+# Lightning Talks
+
+1. Livetweeting Tech Conferences
+  * [Bridget Kromhout](https://twitter.com/bridgetkromhout), Microsoft
+  * [Speaking engagements](http://bridgetkromhout.com/speaking)
+  * [Blog about livetweeting conferences](https://bridgetkromhout.com/blog/livetweeting-tech-conferences/)
+  * Incorporate the conference hashtag in all tweets and responses.
+1. 5 Insights from 200 SREs on How Incident Response Affects Them
+  * [Jaime Woo](https://twitter.com/jaimewoo), [Dawn Parzych](https://twitter.com/dparzych), Catchpoint
+  * [Full report](http://bit.ly/2019SRE-Report)
+1. Distributed Systems Need Deadlines
+  * [Paul Henry](https://twitter.com/paulhenry), Coinbase
+  * Cool use of [Golang gophers](https://github.com/mholt/golang-graphics)
+  * [Reading list](https://bit.ly/2HykYV8)
+1. Doughnut Dilemma: A Lesson in Resource Managers
+  * [Ravi Lachhman](https://twitter.com/ravilach), AppDynamics
+1. Automating SRE Work: Focusing on High-Return Customer and Business Outcomes
+  * Aniket Kulkarni, PayPal
+1. Durable Disorder
+  * Anthony Sandoval, GitLab Inc
+1. The Operation Maturity Model
+  * [Matthew Fornaciari](https://twitter.com/callmeforni), Gremlin, Inc.
+  * Join the [Chaos Community](http://gremlin.com/slack)
+1. "Monitoring and Alerting, Ain't Nobody Got Time for That": How USDS Bootstrapped Basic SRE Best Practices a Week before Launch at FEMA
+  * David Holmes, USDS
+  * Said that HealthCare.Gov started with zero monitoring. Team members joked, "CNN works as our alerting system."
+  * [Apply](http://usds.gov/apply)
+
+# Labs
+
+## A Guided Tour of Kubernetes Cluster Setup
+
+A lot of SREs are (or will soon be) responsible for Kubernetes clusters. But what exactly makes up Kubernetes? This talk will dive into the services and systems that make a cluster work, how they interact, and what can go wrong. Kubernetes will no longer be a black box, but a system that can be debugged, reconfigured, and improved to suit every administrators' needs.
+
+### Presenter
+
+[Liz Frost](https://twitter.com/stillinbeta) is a kubernetes contributor and engineer at VMware, née Heptio. She is also a dog mom, queer woman, and occasionally a colorful pony.
+
+### Notes
+
+1. [Instructions](http://bit.ly/srecon-cake0)
+1. I [pronounce Kubernetes](https://en.wiktionary.org/wiki/%CE%BA%CF%85%CE%B2%CE%B5%CF%81%CE%BD%CE%AE%CF%84%CE%B7%CF%82#Pronunciation) incorrectly, and might continue to.
+
+[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_frost.pdf)
+
+## Getting Started with Observability Lab
+
+Building a cloud native organization without having a robust understanding of what your applications are doing in production is almost impossible. Exposure to these tools early will give engineers who are beginning to make the transformation in their organizations a greater understanding behind the need for observability.
+
+In this session, we will cover how to install the Prometheus Operator, Grafana, Jaeger, and begin monitoring a live production Kubernetes cluster. We will then instrument an example application composed of Java and AngularJS microservices using technologies such as Opentracing and Micrometer.
+
+We will show how developers can see transactions occurring between their applications and explore how these tools will help both developers and operations troubleshoot and diagnose issues. We will also cover how these tools can be leveraged to build alerts and deliver business intelligence.
+
+### Presenter
+
+[Kevin Crawley](https://twitter.com/notsureifkevin) works as a developer evangelist for Instana, an APM and container monitoring service provider and speaks globally on topics including distributed computing, microservices, containers, monitoring, logging, deployment automation, observability, public speaking, alert fatigue, and human ops. He has been distinguished by his peers as a Docker Captain for his outstanding work with the community and the successful implementation of Docker in Production over the past 3 years.
+
+He has helped organize several local meetup groups in the Nashville, TN area including Docker, Go, and Serverless and has spoken at many other groups including Java, Javascript, PHP, and DevOps. He is also the organizer for Nashville's own DevOpsDays.
+
+### Notes
+
+[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_crawley.pdf)
+
+[Lab notes](https://bit.ly/2UQlSz4)
 
 # Presentations
 
@@ -239,21 +313,6 @@ Danny Chen (Bloomberg) started his career almost 40 years ago as a UNIX performa
 
 [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_chen.pdf)
 
-## A Guided Tour of Kubernetes Cluster Setup
-
-A lot of SREs are (or will soon be) responsible for Kubernetes clusters. But what exactly makes up Kubernetes? This talk will dive into the services and systems that make a cluster work, how they interact, and what can go wrong. Kubernetes will no longer be a black box, but a system that can be debugged, reconfigured, and improved to suit every administrators' needs.
-
-### Presenter
-
-[Liz Frost](https://twitter.com/stillinbeta) is a kubernetes contributor and engineer at VMware, née Heptio. She is also a dog mom, queer woman, and occasionally a colorful pony.
-
-### Notes
-
-1. [Instructions](http://bit.ly/srecon-cake0)
-1. I [pronounce Kubernetes](https://en.wiktionary.org/wiki/%CE%BA%CF%85%CE%B2%CE%B5%CF%81%CE%BD%CE%AE%CF%84%CE%B7%CF%82#Pronunciation) incorrectly, and might continue to.
-
-[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_frost.pdf)
-
 ## What I Wish I Knew before Going On-call
 
 Firefighting a broken system is time-sensitive and stressful but becomes even more challenging as teams and systems evolve. As an on-call engineer, scaling processes among humans is an important problem to solve. How do we ramp up new engineers effectively? How can we bring existing on-call engineers up to speed? In this workshop we'll share common myths among new on-call engineers and the Do's and Don'ts of on-call onboarding, as well as run through hands-on activities you can take back to work and apply directly to your own on-call processes.
@@ -274,3 +333,60 @@ Wenting Wang is a Software Engineer with three years of industry experience. She
 
 [More info](https://github.com/dorothyjung/lisa18)
 
+## Madaari: Ordering for the Monkeys
+
+Lineage Driven Fault Injection (LDFI) is a state of the art technique in chaos engineering experiment selection. As SRE's we would like to perform chaos experiments that reveal the bugs that the customers are most likely to hit first. In this talk, we present new improvements to LDFI that orders the experiment suggestions.
+
+In the first the half of the talk we will show introduce LDFI as a technique that can be widely used within an enterprise. We also highlight how ordering is general purpose technique that we can use to encode the peculiarities of a heterogeneous microservices architecture. LDFI can work in an enterprise by harnessing the observability infrastructure to model the redundancy of the system.
+
+Next, we present experiments conducted within eBay using ordered LDFI and some preliminary results. We show examples of services where we discovered bugs, and how carefully controlling the order of experiments allowed LDFI to avoid running unnecessary experiments.
+
+We will discuss open problems and future direction of LDFI.
+
+Key takeaways :
+
+1. Understand how LDFI can be integrated in the enterprise by harnessing the observability infrastructure
+1. Limitations of LDFI w.r.t unordered solutions and why ordering matters for chaos experiments
+1. Preliminary results of prioritized LDFI and a future direction for the community
+
+No prior knowledge of LDFI is required.
+
+### Presenters
+
+Ashutosh is a member of the Site Reliability team at eBay focussed on bringing LDFI to the enterprise. He works at the intersection of academia and industry, trying his best to fuse them together. Previously, Ashutosh was a graduate student at UCSC working at Disorderly Labs making distributed systems safer using LDFI.
+
+Ramprasad is a member of the Site Reliability team at eBay working on making checkout highly reliable and available. He is an experienced developer and a new practitioner of chaos engineering at eBay.
+
+### Notes
+
+[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_raina.pdf)
+
+[Additional reading](https://people.ucsc.edu/~palvaro/socc16.pdf)
+
+## Latency SLOs Done Right
+
+Median, average, 90th, 99th percentile. We've all seen these metrics on our monitoring systems, both open source and from commercial vendors, but often they are used incorrectly when constructing Service Level Objectives. This session will show three different approaches to correctly calculating latency SLOs, and how histograms can be used to calculate mathematically correct quantiles and set SLOs based on those.
+
+### Presenter
+
+[Fred Moyer](https://twitter.com/phredmoyer) is a Developer Evangelist for Circonus, where he likes to apply math to ridiculously large sets of data. Fred is a recovering Perl and C programmer, and these days likes to hack in Go and is learning Lua. He is a 2013 White Camel award winner, Apache Software Foundation member, and has worked in software engineering and reliability roles for the last 18 years.
+
+### Notes
+
+[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_moyer.pdf)
+
+1. Pick up a copy of Seeking SRE (O'Reilly)
+
+## Resilience Engineering Mythbusting
+
+How confident are you in your prod servers staying up without your help? Too often in tech we mistakenly interchange three important concepts when describing our socio-technical systems: how resilient they are, the reliability they exhibit in day to day work, and how robust they are under duress. Though interrelated, they are not equivalent.
+
+How can we successfully gain insights in post-incident reviews, execute chaos engineering experiments, and build scalable infrastructure if we're misinterpreting our approaches? By separating out these core concepts, we can isolate better approaches in adapting to unforeseen circumstances. We'll look at common misconceptions when describing our systems as resilient and focus on proven methods to help us improve our understanding of our systems.
+
+### Presenter
+
+[Will Gallego](https://twitter.com/wcgallego) is a systems engineer with 15+ years of experience in the web development field, currently as a Senior Software Engineer at Fastly. Comfortable with several parts of the stack, he focuses now on building scalable, distributed backend systems and tools to help engineers grow. He believes in a free and open internet, blame aware post mortems, and pronouncing gif with a soft "G".
+
+### Notes
+
+[Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_gallego.pdf)
