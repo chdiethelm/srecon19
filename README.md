@@ -175,6 +175,7 @@ Tony Lykke is an SRE on the trade systems team at Hudson River Trading based in 
 
 1. Alerting system silence should not spark investigations to see if anything's wrong.
 1. Funnel silenced alerts (and self-remediated issues) into a Slack channel. Their presence offers availability confidence for team members.
+1. Sometimes high alert volume gets driven by culture, not technology.
 
 [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_lykke.pdf)
 
@@ -249,9 +250,12 @@ We will move the needle forward and increase our opportunity for learning from s
 
 ### Notes
 
+1. Start refering to incidents as surprises.
 1. During incident reviews, focus on 'how' more than 'why'.
 1. Engineers often answer 'why' with self-blaming responses; 'how' with stories about the conditions which contributed to their execution decisions.
 1. Availability data does not gauge the effort which goes into keeping a system healthy.
+1. Many guardrails inhibit engineers from performing everyday tasks.
+1. An incident is a combination of normal things which go wrong in unison.
 
 [Github - Learning From Incidents](https://github.com/thishitshome/learning-from-incidents)
 
@@ -327,11 +331,12 @@ Wenting Wang is a Software Engineer with three years of industry experience. She
 
 ### Notes
 
+1. Choose your own adventure [on-call game](http://dorothyjung.com/oncall-game/)
+1. Wenting's [SREcon 2019 repo](https://github.com/wentingwang/SRECon19)
+1. Dorothy's [LISA 2018 repo](https://github.com/dorothyjung/lisa18)
+1. Runbook should inform how to jump start a car, not build one.
+
 [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/srecon19americas_slides_wang.pdf)
-
-[More info](https://github.com/wentingwang/SRECon19)
-
-[More info](https://github.com/dorothyjung/lisa18)
 
 ## Madaari: Ordering for the Monkeys
 
@@ -388,5 +393,7 @@ How can we successfully gain insights in post-incident reviews, execute chaos en
 [Will Gallego](https://twitter.com/wcgallego) is a systems engineer with 15+ years of experience in the web development field, currently as a Senior Software Engineer at Fastly. Comfortable with several parts of the stack, he focuses now on building scalable, distributed backend systems and tools to help engineers grow. He believes in a free and open internet, blame aware post mortems, and pronouncing gif with a soft "G".
 
 ### Notes
+
+1. Chaos engineering develops systems understanding, not a means to find bugs.
 
 [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_gallego.pdf)
