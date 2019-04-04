@@ -38,9 +38,6 @@ information. I offer this repository to share information gathered at SREcon.
 * I want art from [Emily Griffin](https://www.daybrighten.com/) for any future slides I need to present from.
 * I did not attend the talk, but read about [Amy Tobey](https://twitter.com/missamytobey)'s quote, "Heroes are a liability."
 * I missed [Leslie Carr](https://twitter.com/lesliegeek?lang=en)'s [presentation about loving your job](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_carr.pdf). That sounded like a good one.
-* The lightning rounds were great: quick, informative, fun.
-  * [Bridget Kromhout](https://twitter.com/bridgetkromhout) gave a quick talk about live Tweeting conferences.
-  * USDS got some laughs when they stated that in its early days, HealthCare.Gov had no monitoring, and that the team joked that CNN was good enough for alerting.
 
 # Lightning Talks
 
@@ -103,6 +100,11 @@ He has helped organize several local meetup groups in the Nashville, TN area inc
 
 ### Notes
 
+* We have plenty of unit and integration tests. Why do alerts still go off?
+* Hotfixes routinely go into production after releases.
+* [TraceContext propagation](https://github.com/w3c/trace-context/)
+* On-call rotations should include managers (at least as shadows), for pain context.
+
 [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_crawley.pdf)
 
 [Lab notes](https://bit.ly/2UQlSz4)
@@ -120,6 +122,8 @@ By definition, you cannot predict true black swans. But black swans often fall i
 [Laura Nolan](https://twitter.com/lauralifts)'s background is in Site Reliability Engineering, software engineering, distributed systems, and computer science. She wrote the 'Managing Critical State' chapter in the O'Reilly 'Site Reliability Engineering' book, as well as contributing to the more recent 'Seeking SRE'.
 
 ### Notes
+
+I enjoyed this presentation. We can all learn a considerable amount from incidents encountered by others. I salute companies which share high profile issues in tech blogs or other reports. One problem many companies face: how to stress test
 
 [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_nolan.pdf)
 
