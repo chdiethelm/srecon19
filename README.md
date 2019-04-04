@@ -38,9 +38,6 @@ information. I offer this repository to share information gathered at SREcon.
 * I want art from [Emily Griffin](https://www.daybrighten.com/) for any future slides I need to present from.
 * I did not attend the talk, but read about [Amy Tobey](https://twitter.com/missamytobey)'s quote, "Heroes are a liability."
 * I missed [Leslie Carr](https://twitter.com/lesliegeek?lang=en)'s [presentation about loving your job](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_carr.pdf). That sounded like a good one.
-* The lightning rounds were great: quick, informative, fun.
-  * [Bridget Kromhout](https://twitter.com/bridgetkromhout) gave a quick talk about live Tweeting conferences.
-  * USDS got some laughs when they stated that in its early days, HealthCare.Gov had no monitoring, and that the team joked that CNN was good enough for alerting.
 
 # Lightning Talks
 
