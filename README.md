@@ -100,6 +100,11 @@ He has helped organize several local meetup groups in the Nashville, TN area inc
 
 ### Notes
 
+* We have plenty of unit and integration tests. Why do alerts still go off?
+* Hotfixes routinely go into production after releases.
+* [TraceContext propagation](https://github.com/w3c/trace-context/)
+* On-call rotations should include managers (at least as shadows), for pain context.
+
 [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_crawley.pdf)
 
 [Lab notes](https://bit.ly/2UQlSz4)
@@ -117,6 +122,8 @@ By definition, you cannot predict true black swans. But black swans often fall i
 [Laura Nolan](https://twitter.com/lauralifts)'s background is in Site Reliability Engineering, software engineering, distributed systems, and computer science. She wrote the 'Managing Critical State' chapter in the O'Reilly 'Site Reliability Engineering' book, as well as contributing to the more recent 'Seeking SRE'.
 
 ### Notes
+
+I enjoyed this presentation. We can all learn a considerable amount from incidents encountered by others. I salute companies which share high profile issues in tech blogs or other reports. One problem many companies face: how to stress test
 
 [Slides](https://www.usenix.org/sites/default/files/conference/protected-files/sre19amer_slides_nolan.pdf)
 
